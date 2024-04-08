@@ -13,7 +13,7 @@ if __name__ == "__main__":
     m2 = 1.5
 
     g_forces = np.array([NewtonLaw().gravitational_force(m1, m2, r) for r in range(100, 1001, 50)])
-    print(g_forces)
+
     plt.plot(g_forces)
     plt.xlabel("distance (m)")
     plt.ylabel("gravitational force (Newton)")
